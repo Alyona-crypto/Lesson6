@@ -26,7 +26,6 @@
 //класи
 
 // class Bank {
-//   static type = "Privat";
 //   constructor(options) {
 //     this.summ = options.summ;
 //     this.month = options.month;
@@ -34,7 +33,7 @@
 //   }
 
 //   credit() {
-//     return console.log("I am Privat");
+//     return console.log(this.summ + this.p * this.month);
 //   }
 // }
 
@@ -45,7 +44,27 @@
 // });
 
 // userBank.credit();
-// console.log(Bank.type);
+
+// class Bank {
+//       static type = "Privat";
+//       constructor(options) {
+//         this.summ = options.summ;
+//         this.month = options.month;
+//         this.p = options.p;
+//       }
+    
+//       credit() {
+//         return console.log(this.summ + this.p * this.month);
+//       }
+//     }
+    
+//     const userBank = new Bank({
+//       summ: 30000,
+//       month: 5,
+//       p: 500,
+//     });
+    
+// console.log(userBank.credit);
 
 // class NewBank extends Bank {
 //   constructor(options) {
@@ -64,6 +83,8 @@
 //   p: 500,
 //   card: true,
 // });
+
+// console.log(aval.credit());
 
 // get & set
 
@@ -109,6 +130,8 @@
 // const b = Object.create(a);
 
 // console.log(b);
+// console.log(a);
+// console.log(b.x);
 
 // const Manager = function (name, sales) {
 //   this.name = name;
@@ -118,9 +141,14 @@
 // const ann = new Manager("Anna", 5);
 // const ivan = new Manager("Ivan", 10);
 
+
 // Manager.prototype.sale = function () {
 //   this.sales += 1;
 // };
+
+// console.log(ann.sales);
+// ann.sale();
+// console.log(ann.sales);
 
 // console.dir(Manager);
 
@@ -143,3 +171,5 @@
 // let coffeeMachine = new CoffeMachine(100);
 
 // coffeeMachine.waterAmount = -20;
+
+// console.log(coffeeMachine);
