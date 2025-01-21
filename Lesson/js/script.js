@@ -23,7 +23,7 @@
 
 // console.log(credit.result());
 
-//класи
+// класи
 
 // class Bank {
 //   constructor(options) {
